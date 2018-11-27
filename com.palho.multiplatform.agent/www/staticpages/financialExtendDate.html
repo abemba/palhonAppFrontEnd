@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <title>PALHON</title>
+        <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+        <link rel="stylesheet" href="css/home.css">
+        <link rel="stylesheet" href="css/all.min.css">
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap/bootstrap.min.js"></script>        
+    </head>
+    <body>
+        <div class="">
+            <div class="top">
+                <h1>PALHON</h1>
+            </div>
+            
+
+
+
+            <div class="content">
+
+                <div class="section" style="text-align:center;">
+                    <h3 style="margin-bottom:10%; margin-top:35%">PAYOUT DATE UPDATE</h3>
+                    <small>Monday 18 October 2019</small>
+                    <br><br>
+                <label for="month_start">Month</label> 
+                <select id="month_start"  name="month_start" > 
+                  <option>January</option>       
+                  <option>February</option>       
+                  <option>March</option>       
+                  <option>April</option>       
+                  <option>May</option>       
+                  <option>June</option>       
+                  <option>July</option>       
+                  <option>August</option>       
+                  <option>September</option>       
+                  <option>October</option>       
+                  <option>November</option>       
+                  <option>December</option>       
+                </select> - 
+                <label for="day_start">Day</label> 
+                <select id="day_start"  name="day_start" > 
+                  <option>1</option>       
+                  <option>2</option>       
+                  <option>3</option>       
+                  <option>4</option>       
+                  <option>5</option>       
+                  <option>6</option>       
+                  <option>7</option>       
+                  <option>8</option>       
+                  <option>9</option>       
+                  <option>10</option>       
+                  <option>11</option>       
+                  <option>12</option>       
+                  <option>13</option>       
+                  <option>14</option>       
+                  <option>15</option>       
+                  <option>16</option>       
+                  <option>17</option>       
+                  <option>18</option>       
+                  <option>19</option>       
+                  <option>20</option>       
+                  <option>21</option>       
+                  <option>22</option>       
+                  <option>23</option>       
+                  <option>24</option>       
+                  <option>25</option>       
+                  <option>26</option>       
+                  <option>27</option>       
+                  <option>28</option>       
+                  <option>29</option>       
+                  <option>30</option>       
+                  <option>31</option>       
+                </select> - 
+                <label for="year_start">Year</label> 
+                <select id="year_start" 
+                       name="year_start" /> 
+                  <option>2009</option>       
+                  <option>2010</option>       
+                  <option>2011</option>       
+                  <option>2012</option>       
+                  <option>2013</option>       
+                  <option>2014</option>       
+                  <option>2015</option>       
+                  <option>2016</option>       
+                  <option>2017</option>       
+                  <option>2018</option>       
+                </select> 
+                </div>
+
+            
+            </div>
+
+
+
+
+            <a href="financial.html">
+                <div class="menu">
+                    <h6 style="text-align:center">UPDATE</h6>
+                </div>
+            </a>
+        </div>
+
+        <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>

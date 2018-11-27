@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <title>PALHON - THINK CASH. THINK PALHON.</title>
+        <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/shared.css">
+        <link rel="stylesheet" href="css/client.css">
+
+
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap/bootstrap.min.js"></script>
+        
+        <script src="js/angular.min.js"></script>
+        <script src="js/angular-cookies.min.js"></script>
+        <script src="js/angular-route.min.js"></script>
+    </head>
+    <body>
+        <div ng-app="palhon_client" ng-controller="palhonClientMain">
+            <div class="top">
+                <h1>PALHON</h1>
+            </div>
+
+            <div class="content" ng-view></div>
+
+            <div class="menu">
+                <ul clas>
+                    <li class="current" ng-click="changePage($event)" ><a href="#/!"><i class="fa fa-home"></i>  HOME</a></li>
+                    <li ng-click="changePage($event)"><a href="#!cash48" > CASH4<i class="fas  fa-dollar-sign"></i></a></li>
+                    <li ng-click="changePage($event)"><a href="#!myprofile" ><i class="fas fa-user-tie"></i> MY PROFILE</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <script src="controllers/client.main.controller.js"></script>
+        <script src="controllers/client.cash48.controller.js" ></script>
+        <script src="controllers/client.myprofile.controller.js" ></script>
+    </body>
+</html>

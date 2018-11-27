@@ -1,0 +1,59 @@
+<div class="section">
+    <h6>SHIFT STATUS <small>{{shiftDescription}}</small></h6>
+    <div class="two-button"><button class="off" ng-click="changeShiftStatus($event)">OFF</button> <button ng-click="changeShiftStatus($event)"  class="on" >ON</button></div>
+</div>
+
+<div class="section">
+    <h6>AVAILABLE CASH</h6>
+    <div class="available-cash"> <i class="fas fa-dollar-sign"></i>  {{cashBalance}} </div>
+    <div class="two-button"><button ng-mousedown="fastAdd()" ng-mouseup="fastAddRelease()" ng-click="subBalance()" class="off"><i class="fas fa-minus"></i></button> <button ng-click="addBalance()" class="on"><i class="fas fa-plus"></i></button></div>
+</div>
+
+<div class="section">
+    <h6>AVAILABLE TO DELIVER <small>{{deliveryStatus}}</small></h6>
+    <div class="two-button"><button ng-click="deliveryStatusChange($event)" class="off">OFF</button> <button ng-click="deliveryStatusChange($event)" class="on">ON</button></div>
+</div>
+
+<div class="section" ng-show="deliveryMethod">
+    <h6>METHOD OF DELIVERY <small>{{activeDeliveryMethod}}</small></h6>
+    <div class="method">
+        <div class="active"  ng-click="switchDeliveryMethod($event)">
+            <i class="fas fa-car"></i> DRIVING 
+        </div>
+        <div ng-click="switchDeliveryMethod($event)">
+           <i class="fas fa-bicycle"></i> CYCLING <br >
+        </div>
+        <div  ng-click="switchDeliveryMethod($event)">
+           <i class="fas fa-walking"></i> WALKING <br >
+        </div>
+
+    </div>
+</div>
+<div class="section">
+    <h6>WEEKLY AVAILABILITY</h6>
+    <div class="schedule">
+        <table>
+            <tr>
+                <td>MONDAY</td><td>11-23</td><td><a href="#!availability/week/update"><button>EDIT</button></a></td>
+            </tr>
+            <tr>
+                <td>TUESDAY</td><td>11-23</td><td><button>EDIT</button></td>
+            </tr>
+            <tr>
+                <td>WEDNESDAY</td><td>11-23</td><td><button>EDIT</button></td>
+            </tr>
+            <tr>
+                <td>THURSDAY</td><td>11-23</td><td><button>EDIT</button></td>
+            </tr>
+            <tr>
+                <td>FRIDAY</td><td>11-23</td><td><button>EDIT</button></td>
+            </tr>
+            <tr>
+                <td>SATURDAY</td><td>11-23</td><td><button>EDIT</button></td>
+            </tr>
+            <tr>
+                <td>SUNDAY</td><td>11-23</td><td><button>EDIT</button></td>
+            </tr>
+        </table>
+    </div>
+</div>
